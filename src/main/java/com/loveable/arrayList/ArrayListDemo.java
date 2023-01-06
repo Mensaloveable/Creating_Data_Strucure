@@ -48,6 +48,11 @@ public class ArrayListDemo {
     }
 
     //find element
+
+    /**
+     * @param pos is the index in the array
+     * @return the element at the particular position id the index exists
+     */
     public int find(int pos) {
         int result = -1;
         if (pos < index && pos >= 0) {
@@ -59,6 +64,11 @@ public class ArrayListDemo {
     }
 
     // array contains an element
+
+    /**
+     * @param element
+     * @return
+     */
     public boolean contains(int element) {
         for (int i = 0; i < index; i++) {
             if (element == array[i]) return true;
@@ -67,7 +77,17 @@ public class ArrayListDemo {
     }
 
     //find by element
+
+    public int findElement(int element) {
+        for (int i = 0; i < index; i++) {
+            if (element == array[i])
+                return i;
+        }
+        return -1;
+    }
+
     //delete by element
+
 
     @Override
     public String toString() {
