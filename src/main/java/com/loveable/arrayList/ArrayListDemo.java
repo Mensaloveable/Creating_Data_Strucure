@@ -1,4 +1,9 @@
 package com.loveable.arrayList;
+/** Represents an employee.
+ * @author Abdullahi Adedayo
+ * @version 1.0
+ * @since Jan-06-2023
+ */
 
 import java.util.Arrays;
 
@@ -12,11 +17,18 @@ public class ArrayListDemo {
     }
 
     //get
+
+    /**
+     * @return a static array of the ArrayListDemo
+     */
     public int[] get() {
         return array;
     }
 
     // add to array
+    /**
+     * @param element is the element to be added to the ArrayListDemo
+     */
     public void add(int element) {
         if (array.length == index) {
             int[] newArray = new int[index + 1];
@@ -29,11 +41,17 @@ public class ArrayListDemo {
     }
 
     //length of array
+    /**
+     * @return the length of the Array
+     */
     public int length() {
         return index;
     }
 
     //delete element
+    /**
+     * @param pos is the index of the element to be deleted
+     */
     public void delete(int pos) {
         if (pos < index && pos >= 0) {
             int[] newArray = new int[index - 1];
@@ -48,10 +66,9 @@ public class ArrayListDemo {
     }
 
     //find element
-
     /**
      * @param pos is the index in the array
-     * @return the element at the particular position id the index exists
+     * @return the element at the particular position if the index exists
      */
     public int find(int pos) {
         int result = -1;
@@ -64,10 +81,9 @@ public class ArrayListDemo {
     }
 
     // array contains an element
-
     /**
-     * @param element
-     * @return
+     * @param element is the searched item
+     * @return true if element exists and false if otherwise
      */
     public boolean contains(int element) {
         for (int i = 0; i < index; i++) {
@@ -77,7 +93,10 @@ public class ArrayListDemo {
     }
 
     //find by element
-
+    /**
+     * @param element is the searched item
+     * @return the index of the element if element exists in the array and returns -1 if otherwise
+     */
     public int findElement(int element) {
         for (int i = 0; i < index; i++) {
             if (element == array[i])
@@ -87,6 +106,10 @@ public class ArrayListDemo {
     }
 
     //delete by element
+    /**
+     *
+     * @param element is the item to be deleted from the Array
+     */
     public void deleteElement(int element) {
         int find = findElement(element);
         if (find >= 0) {

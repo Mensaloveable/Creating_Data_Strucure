@@ -2,6 +2,8 @@ package com.loveable;
 
 import com.loveable.arrayList.ArrayListDemo;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         ArrayListDemo myArray = new ArrayListDemo(3);
@@ -28,5 +30,7 @@ public class Main {
         myArray.deleteElement(30);
         System.out.println(myArray);
         System.out.println(myArray.length());
+        ArrayListDemo newArray = myArray;
+        System.out.println(newArray);
     }
 }
