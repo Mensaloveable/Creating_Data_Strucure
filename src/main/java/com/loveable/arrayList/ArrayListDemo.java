@@ -2,15 +2,11 @@ package com.loveable.arrayList;
 
 import java.util.Arrays;
 
-public class ArrayListDemo<E> {
+// Todo: Make this ArrayList generic
+public class ArrayListDemo {
     private int[] array;
     private int index;
 
-//    public  ArrayListDemo(){
-//        array = new int[10];
-//    }
-
-    //    public ArrayListDemo(Collection<? extends E> c, int initialSize) {
     public ArrayListDemo(int initialSize) {
         array = new int[initialSize];
     }
@@ -24,14 +20,11 @@ public class ArrayListDemo<E> {
     public void add(int element) {
         if (array.length == index) {
             int[] newArray = new int[index + 1];
-            for (int i = 0; i < array.length; i++) {
+            for (int i = 0; i < array.length; i++)
                 newArray[i] = array[i];
-            }
             array = newArray;
-            array[index] = element;
-        } else {
-            array[index] = element;
         }
+        array[index] = element;
         index++;
     }
 
@@ -45,8 +38,7 @@ public class ArrayListDemo<E> {
         if (pos < index && pos >= 0) {
             int[] newArray = new int[index - 1];
             for (int i = 0, j = 0; i < index; i++) {
-                if (pos == i)
-                    continue;
+                if (pos == i) continue;
                 newArray[j] = array[i];
                 j++;
             }
@@ -60,8 +52,7 @@ public class ArrayListDemo<E> {
         int result = -1;
         if (pos < index && pos >= 0) {
             for (int i = 0; i < index; i++) {
-                if (pos == i)
-                    result = array[i];
+                if (pos == i) result = array[i];
             }
         }
         return result;
@@ -70,8 +61,7 @@ public class ArrayListDemo<E> {
     // array contains an element
     public boolean contains(int element) {
         for (int i = 0; i < index; i++) {
-            if (element == array[i])
-                return true;
+            if (element == array[i]) return true;
         }
         return false;
     }
