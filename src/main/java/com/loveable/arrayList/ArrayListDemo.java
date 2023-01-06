@@ -87,7 +87,20 @@ public class ArrayListDemo {
     }
 
     //delete by element
-
+    public void deleteElement(int element) {
+        int find = findElement(element);
+        if (find >= 0) {
+            int[] newArray = new int[index - 1];
+            for (int i = 0, j = 0; i < index; i++) {
+                if (array[i] == element)
+                    continue;
+                newArray[j] = array[i];
+                j++;
+            }
+            array = newArray;
+            index--;
+        }
+    }
 
     @Override
     public String toString() {

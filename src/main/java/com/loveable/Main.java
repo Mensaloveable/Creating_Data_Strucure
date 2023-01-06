@@ -25,6 +25,8 @@ public class Main {
         System.out.println("index of 30 is " + index);
         index = myArray.findElement(300);
         System.out.println("index of 300 is " + index);
-
+        myArray.deleteElement(30);
+        System.out.println(myArray);
+        System.out.println(myArray.length());
     }
 }
