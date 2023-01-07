@@ -2,8 +2,6 @@ package com.loveable;
 
 import com.loveable.arrayList.ArrayListDemo;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         ArrayListDemo myArray = new ArrayListDemo(3);
