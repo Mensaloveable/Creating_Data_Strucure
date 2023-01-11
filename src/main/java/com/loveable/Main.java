@@ -1,9 +1,11 @@
 package com.loveable;
 
 import com.loveable.arrayList.ArrayListDemo;
+import com.loveable.linkedList.LinkedListDemo;
 
 public class Main {
     public static void main(String[] args) {
+        /**
         ArrayListDemo myArray = new ArrayListDemo(3);
 
         myArray.add(10);
@@ -30,5 +32,13 @@ public class Main {
         System.out.println(myArray.length());
         ArrayListDemo newArray = myArray;
         System.out.println(newArray);
+         */
+
+        /**    ###############################        */
+
+        LinkedListDemo linkedList = new LinkedListDemo();
+        System.out.println(linkedList);
+        linkedList.addLast(5);
+        System.out.println(linkedList);
     }
 }

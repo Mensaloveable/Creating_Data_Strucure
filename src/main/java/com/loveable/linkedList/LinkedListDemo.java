@@ -7,6 +7,14 @@ public class LinkedListDemo {
         Node(int element){
             this.element = element;
         }
+
+        @Override
+        public String toString() {
+            return "Node{" +
+                    "element=" + element +
+                    ", next=" + next +
+                    '}';
+        }
     }
     private Node head;
     private Node tail;
