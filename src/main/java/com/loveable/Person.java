@@ -8,4 +8,5 @@ public abstract class Person {
         System.out.println("Hi Faith2");
     }
 
+    abstract void sing();
 }

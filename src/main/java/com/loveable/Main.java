@@ -4,5 +4,5 @@ import com.loveable.arrayList.ArrayListDemo;
 import com.loveable.linkedList.LinkedListDemo;
 
 public class Main {
-
+    Boss faith = new Boss();
 }
