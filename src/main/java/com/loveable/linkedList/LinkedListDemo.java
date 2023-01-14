@@ -30,6 +30,15 @@ public class LinkedListDemo {
         }
     }
     //Todo: addFirst
+    public void addFirst(int element) {
+        Node node = new Node(element);
+        if (head == null) {
+            head = tail = node;
+        } else {
+            node.next = head;
+            head = node;
+        }
+    }
     //Todo: indexOf
     //Todo: contains
     //Todo: size
