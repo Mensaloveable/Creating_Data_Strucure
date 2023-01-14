@@ -8,5 +8,7 @@ public class Main {
         linkedList.addLast(10);
         linkedList.addLast(15);
         System.out.println(linkedList);
+        linkedList.addFirst(0);
+        System.out.println(linkedList);
     }
 }

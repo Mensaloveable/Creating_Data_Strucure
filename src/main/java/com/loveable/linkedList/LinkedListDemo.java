@@ -1,10 +1,11 @@
 package com.loveable.linkedList;
 
 public class LinkedListDemo {
-    private class Node{
+    private class Node {
         int element;
         Node next;
-        Node(int element){
+
+        Node(int element) {
             this.element = element;
         }
 
@@ -16,10 +17,10 @@ public class LinkedListDemo {
                     '}';
         }
     }
+
     private Node head;
     private Node tail;
 
-    //Todo: addLast
     public void addLast(int element) {
         Node node = new Node(element);
         if (head == null)
@@ -29,12 +30,13 @@ public class LinkedListDemo {
             tail = node;
         }
     }
+
     //Todo: addFirst
     public void addFirst(int element) {
         Node node = new Node(element);
-        if (head == null) {
+        if (head == null)
             head = tail = node;
-        } else {
+        else {
             node.next = head;
             head = node;
         }
