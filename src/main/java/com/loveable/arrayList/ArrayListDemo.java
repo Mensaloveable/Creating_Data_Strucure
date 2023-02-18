@@ -1,13 +1,15 @@
 package com.loveable.arrayList;
-/** Represents an employee.
+
+import java.util.Arrays;
+
+/**
+ * Represents an employee.
+ *
  * @author Abdullahi Adedayo
  * @version 1.0
  * @since Jan-06-2023
  */
 
-import java.util.Arrays;
-
-// Todo: Make this ArrayList generic
 public class ArrayListDemo {
     private int[] array;
     private int index;
@@ -16,8 +18,6 @@ public class ArrayListDemo {
         array = new int[initialSize];
     }
 
-    //get
-
     /**
      * @return a static array of the ArrayListDemo
      */
@@ -25,7 +25,6 @@ public class ArrayListDemo {
         return array;
     }
 
-    // add to array
     /**
      * @param element is the element to be added to the ArrayListDemo
      */
@@ -40,7 +39,6 @@ public class ArrayListDemo {
         index++;
     }
 
-    //length of array
     /**
      * @return the length of the Array
      */
@@ -48,7 +46,6 @@ public class ArrayListDemo {
         return index;
     }
 
-    //delete element
     /**
      * @param pos is the index of the element to be deleted
      */
@@ -65,7 +62,6 @@ public class ArrayListDemo {
         }
     }
 
-    //find element
     /**
      * @param pos is the index in the array
      * @return the element at the particular position if the index exists
@@ -80,7 +76,6 @@ public class ArrayListDemo {
         return result;
     }
 
-    // array contains an element
     /**
      * @param element is the searched item
      * @return true if element exists and false if otherwise
@@ -92,7 +87,6 @@ public class ArrayListDemo {
         return false;
     }
 
-    //find by element
     /**
      * @param element is the searched item
      * @return the index of the element if element exists in the array and returns -1 if otherwise
@@ -105,9 +99,7 @@ public class ArrayListDemo {
         return -1;
     }
 
-    //delete by element
     /**
-     *
      * @param element is the item to be deleted from the Array
      */
     public void deleteElement(int element) {
